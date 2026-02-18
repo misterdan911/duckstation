@@ -1,0 +1,99 @@
+# DuckStation Texture Replacement Configuration
+# This file allows you to set a per-game configuration for the dumping and
+# replacement system, avoiding the need to use the normal per-game settings
+# when moving files to a different computer. It also allows for the definition
+# of texture aliases, for reducing duplicate files.
+#
+# All options are commented out by default. If an option is commented, the user's
+# current setting will be used instead. If an option is defined in this file, it
+# will always take precedence over the user's choice.
+
+# Enables texture page dumping mode.
+# Instead of tracking VRAM writes and attempting to identify the "real" size of
+# textures, create sub-rectangles from pages based on how they are drawn. In
+# most games, this will lead to significant duplication in dumps, and reduce
+# replacement reliability. However, some games are incompatible with write
+# tracking, and must use page mode.
+#DumpTexturePages: false
+
+# Dumps full texture pages instead of sub-rectangles.
+# 256x256 pages will be dumped/replaced instead.
+#DumpFullTexturePages: false
+
+# Enables the dumping of direct textures (i.e. C16 format).
+# Most games do not use direct textures, and when they do, it is usually for
+# post-processing or FMVs. Ignoring C16 textures typically reduces garbage/false
+# positive texture dumps, however, some games may require it.
+#DumpC16Textures: false
+
+# Reduces the size of palettes (i.e. CLUTs) to only those indices that are used.
+# This can help reduce duplication and improve replacement reliability in games
+# that use 8-bit textures, but do not reserve or use the full 1x256 region in
+# video memory for storage of the palette. When replacing textures dumped with
+# this option enabled, CPU usage on the GPU thread does increase trivially,
+# however, generally it is worthwhile for the reliability improvement. Games
+# that require this option include Metal Gear Solid.
+#ReducePaletteRange: true
+
+# Converts VRAM copies to VRAM writes, when a copy of performed into a previously
+# tracked VRAM write. This is required for some games that construct animated
+# textures by copying and replacing small portions of the texture with the parts
+# that are animated. Generally this option will cause duplication when dumping,
+# but it is required in some games, such as Final Fantasy VIII.
+#ConvertCopiesToWrites: false
+
+# Determines the maximum number of times a VRAM write/upload can be split, before
+# it is discarded and no longer tracked. This is required for games that partially
+# overwrite texture data, such as Gran Turismo.
+#MaxVRAMWriteSplits: 0
+
+# Determines the maximum size of an incoming VRAM write that will be merged with
+# another write to the left/above of the incoming write. Needed for games that
+# upload textures one line at a time. These games will log "tracking VRAM write
+# of Nx1" repeatedly during loading. If the upload size is 1, then you can set
+# the corresponding maximum coalesce dimension to 1 to merge these uploads,
+# which should enable these textures to be dumped/replaced.
+#MaxVRAMWriteCoalesceWidth: 0
+#MaxVRAMWriteCoalesceHeight: 0
+
+# Determines the minimum size of a texture that will be dumped. Textures with a
+# width/height smaller than this value will be ignored.
+#DumpTextureWidthThreshold: 16
+#DumpTextureHeightThreshold: 16
+
+# Determines the minimum size of a VRAM write that will be dumped, in background
+# dumping mode. Uploads smaller than this size will be ignored.
+#DumpVRAMWriteWidthThreshold: 128
+#DumpVRAMWriteHeightThreshold: 128
+
+# Sets the maximum size of the hash cache that manages texture replacements.
+# Generally the default is sufficient, but some games may require increasing the
+# size. Do not set too high, otherwise mobile drivers will break.
+#MaxHashCacheEntries: 1200
+
+# Sets the maximum amount of VRAM in megabytes that the hash cache can utilize.
+# Keep in mind your target system requirements, using too much VRAM will result
+# in swapping and significantly decreased performance.
+#MaxHashCacheVRAMUsageMB: 2048
+
+# Sets the maximum amount of VRAM in megabytes that are reserved for the cache of
+# replacement textures. The cache usage for any given texture is approximately the
+# same size as the uncompressed source image on disk.
+#MaxReplacementCacheVRAMUsage: 512
+
+# Enables the use of a bilinear filter when scaling replacement textures.
+# If more than one replacement texture in a 256x256 texture page has a different
+# scaling over the native resolution, or the texture page is not covered, a
+# bilinear filter will be used to resize/stretch the replacement texture, and/or
+# the original native data.
+#ReplacementScaleLinearFilter: false
+
+# Use this section to define replacement aliases. One line per replacement
+# texture, with the key set to the source ID, and the value set to the filename
+# which should be loaded as a replacement. For example, without the newline,
+# or keep the multi-line separator.
+#Aliases:
+  # Alias-Texture-Name: Path-To-Texture
+  #  texupload-P4-AAAAAAAAAAAAAAAA-BBBBBBBBBBBBBBBB-64x256-0-192-64x64-P0-14: |
+  #    texupload-P4-BBBBBBBBBBBBBBBB-BBBBBBBBBBBBBBBB-64x256-0-64-64x64-P0-13.png
+  #  texupload-P4-AAAAAAAAAAAAAAAA-BBBBBBBBBBBBBBBB-64x256-0-192-64x64-P0-14: mytexture.png
