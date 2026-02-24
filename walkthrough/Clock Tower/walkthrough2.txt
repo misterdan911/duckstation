@@ -1,0 +1,74 @@
+Thank you for the correction. You are right to distinguish between the two games. The previous guide was for the original Super Famicom game and its direct port, *Clock Tower: The First Fear*.
+
+You are playing the sequel, simply titled *Clock Tower* for the PS1 (also known as *Clock Tower 2* in some regions). This is a different game with different characters (Jennifer is no longer the protagonist) and a different structure.
+
+For the PS1 *Clock Tower*, "getting all characters to survive" is a more complex goal, as the game features multiple protagonists and branching paths. The best ending is achieved by successfully completing the game as **Jennifer** and getting the **"A" ending**.
+
+Based on a detailed walkthrough for the game , here is a step-by-step guide to achieving the best possible outcome where the maximum number of characters survive.
+
+### 📜 Step-by-Step Guide to the Best (A) Ending
+
+This guide follows the "Jennifer 100%" route, which aims for the A ending and the survival of 7 characters .
+
+**1. Prologue - Samuel Barton (Police Station)**
+Your first task is to thoroughly investigate the police station as Samuel.
+- **Initial Investigation:** Examine the Scissors, the Bench, and the Exit Door.
+- **Main Office:** Investigate the Statue. Talk to Beth twice. Investigate the Mask and then the Computer next to it. Talk to the Blond Man twice, then leave through the left door.
+- **Down the Hall:** Go Right. Talk to Harris twice. Take the elevator to floor 1 for a long interview, then take the elevator to floor 2 after.
+- **Back to the Office:** Return to the main office and talk to Harris again. Investigate the Statue and when prompted, choose **"YES, GIVE TO RICK"** .
+- **Final Step:** Enter the Therapy room next to Harris, talk to Kay and Edward. The prologue will end as the screen loads.
+
+**2. Jennifer's Date**
+- Follow the map: Go to the **University Research Building** and talk to Helen.
+- Then, go to the **International Hotel** and talk to Kay.
+- Finally, go to the **University Staff Housing** for the "Cheesy Date" scene.
+
+**3. Scenario 1 (University)**
+- Walk right to the university. The Scissorman chase will begin.
+- Enter the first door. **Hide in the Box.** After he leaves, check the bookshelf near the box to find the **Oil Can**.
+- Run down the hallway to the door right of the elevator. Investigate the desk inside to find the **Ladder Key**.
+- Leave the room, go to the Stairwell, and use the Ladder Key at the top of the staircase to climb down and escape for now.
+
+**4. Intermission 1**
+- Go to the University Research Building and talk to Helen.
+- Then, go to the Oslo Weekly Newspaper office and talk to Nolan. When he makes his proposal, you **CHOOSE YES** .
+
+**5. Scenario 2 (Rick's House)**
+- After the old man dies, go through the right door and upstairs. Enter the door next to the stairs and grab the **Blanket**.
+- Exit and re-enter the room. This time, investigate the green closet to find the **Demon Idol**.
+- Go back downstairs to the living room.
+- Enter the room on the far left of the living room, then the room on the far right of that hallway. Grab the **Soap** on the shelf by the entrance.
+- Return to the living room. Enter the room on the right by the couches. **Crucially, investigate the mask on the wall in the kitchen** to reveal the location of the Barrows mansion. The mask will come to life. Use the vase on the table to throw at the mask and defeat it.
+- Leave the room and "prepare" the soap (select it in your inventory). Go outside and use the soap on the dog to escape unharmed.
+
+**6. Intermission 2**
+- Return to the Oslo Newspaper and chat with Nolan.
+- Go to the Police Station and chat with everyone.
+- Go to the Hotel and chat with everyone.
+- Go to the University and chat with everyone .
+
+**7. Scenario 3 (The Final Mansion - Barrows Mansion)**
+
+This is the most complex section. Follow these steps carefully:
+
+| Step | Location | Action |
+| :--- | :--- | :--- |
+| **1** | Starting Hall (after Harris dialogue) | Exit the room, go to the left room, and **hide behind the coats**. Exit and re-enter the room, then investigate the coats to get the **Stair Key** . |
+| **2** | Library | Go back to the Library room, talk to the ladder for a paper, then go back to the hallway and through the right door. |
+| **3** | Chapel | Look at the panel on the right side of the room (**remember the symbol**: Moon, Sun, or Star). Investigate the back of the chapel door, then Gotts. Use the Stair Key on the panel by the coffin, go up the stairs, crawl through the tunnel, and exit left to the foyer. |
+| **4** | 1st Floor (Left Side) | Go to the immediate left door. Check the nightstand between the beds, then the table left of the white bed (take the **Library** item). Leave. |
+| **5** | 1st Floor (Bottom Left) | Go downstairs to the bottom left door, exit right side. In the first door of this new hallway, search the bed to get the **Large Book**. Leave. |
+| **6** | 1st Floor | Enter the room immediately to the right. Talk to Barton and hand him the note. Exit left. |
+| **7** | Kitchen | Go to the immediate right door, then left to the first door. In the kitchen, investigate the floor panel, then investigate the left food shelf to find a **hidden ladder**. Climb down and talk to Beth twice to get the **Mansion Key** . |
+| **8** | Locked Area | Leave the kitchen through the other door. **Equip the Oil Can**. Go right in the hallway, use the Oil Can on the gate, and then on the door to the right. Push the coffin to find a mummified scissorman and get the **Box Key**. |
+| **9** | Treasure Room | In the same room, grab the **Rope** on the bottom of the wooden shelf and a **Candle**. Use the Rope on the treasure chest. Fight off the bats and use the Rope on the door. Open the chest to find Helen. Leave the room. |
+| **10**| Upstairs | Go up the closest stairs, then to the wooden door on the left. Enter the first door after that for a cutscene. Go through the right door and onto the ledge for a chase sequence. You'll find Nolan in a skeleton room; leave on the right side. |
+| **11**| Genealogy Room | Go to the third wooden door in the new hall, then the door on the left side. Use the **Large Book** on the top of the bookshelf (Genealogy). Investigate the scratch marks, then use the book on the shelf again. |
+| **12**| Altar Room | Input the **Moon, Sun, or Star** symbol you saw in the chapel . Enter the altar room and grab the **Dagger**. Go back up the ladder and leave the library. Exit to the right side of the hallway. |
+| **13**| Getting Matches | Go to the 2nd floor right door. Talk to Tim in the room and get the **Matches** from him. Leave on the left side back to the foyer. |
+| **14**| Mansion Sketch | Go to the bottom left door on the 1st floor. Investigate the 3rd picture from the left. Exit the room. Go upstairs to the far left door. In the first room of that hallway, place the **Candle** in the holder by the fireplace. Use the **Matches** on the candle. Examine the fireplace to get the **Mansion Sketch**. Exit the room and return to the foyer. |
+| **15**| Final Puzzle | Go to the 1st floor far left door, then to the middle door in the new hall. Talk to the 2nd tree to the right of the fountain with the **Demon Idol** prepared. Enter the fountain, go down the ladder. Place the Demon Idol on the left altar and use the **Dagger** on Scissorman . |
+
+By following these steps, you will achieve the game's best ending, ensuring the survival of Jennifer and the maximum number of other characters.
+
+Good luck, and I hope this guide helps you achieve the best possible outcome
